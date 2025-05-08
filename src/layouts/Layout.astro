@@ -1,5 +1,8 @@
 ---
 import "../styles/global.css";
+import { Header } from "../components/Header";
+import {Footer} from '../components/Footer';
+
 ---
 
 <!doctype html>
@@ -14,6 +17,9 @@ import "../styles/global.css";
         
 	</head>
 	<body>
+	    <Header client:visible />
 		<slot />
+        <Footer />
+
 	</body>
 </html>

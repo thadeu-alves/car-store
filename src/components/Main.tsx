@@ -17,7 +17,13 @@ export function Main() {
                 <Button>Booking Now</Button>
                 <p>See all cars</p>
             </div>
-            <div className="w-[432px] h-[320px] bg-[#999999] rounded-tl-4xl"></div>
+            <div className="w-[432px] h-[320px] bg-[#999999] rounded-tl-4xl overflow-hidden">
+                <img
+                    src="/car1.jpg"
+                    alt="car"
+                    className="h-full object-cover"
+                />
+            </div>
         </main>
     );
 }

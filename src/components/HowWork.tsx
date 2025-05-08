@@ -10,7 +10,13 @@ export function HowWork() {
                 website.
             </p>
             <div className="flex flex-col justify-center items-center gap-4 max-w-64 mx-auto">
-                <div className="bg-[#B8B8B8] h-[106px] w-[106px] rounded-4xl"></div>
+                <div className="bg-[#B8B8B8] h-[106px] w-[106px] rounded-4xl p-4">
+                    <img
+                        src="/locale.svg"
+                        alt="locale icon"
+                        className="w-fit"
+                    />
+                </div>
                 <h2 className="text-xl font-semibold">
                     Choose Location
                 </h2>
@@ -21,7 +27,13 @@ export function HowWork() {
                 </p>
             </div>
             <div className="flex flex-col justify-center items-center gap-4 max-w-64 mx-auto">
-                <div className="bg-[#B8B8B8] h-[106px] w-[106px] rounded-4xl"></div>
+                <div className="bg-[#B8B8B8] h-[106px] w-[106px] rounded-4xl p-4">
+                    <img
+                        src="/schedule.svg"
+                        alt="schedule icon"
+                        className="w-fit"
+                    />
+                </div>
                 <h2 className="text-xl font-semibold">
                     Choose Location
                 </h2>
@@ -32,7 +44,13 @@ export function HowWork() {
                 </p>
             </div>
             <div className="flex flex-col justify-center items-center gap-4 max-w-64 mx-auto">
-                <div className="bg-[#B8B8B8] h-[106px] w-[106px] rounded-4xl"></div>
+                <div className="bg-[#B8B8B8] h-[106px] w-[106px] rounded-4xl p-4">
+                    <img
+                        src="/car.svg"
+                        alt="car icon"
+                        className="w-fit"
+                    />
+                </div>
                 <h2 className="text-xl font-semibold">
                     Choose Location
                 </h2>
