@@ -8,8 +8,10 @@ export function Button({
     className?: string;
 }) {
     return (
-        <p className={`bg-white rounded p-3 ${className}`}>
+        <button
+            className={`bg-white rounded p-3 ${className}`}
+        >
             {children}
-        </p>
+        </button>
     );
 }

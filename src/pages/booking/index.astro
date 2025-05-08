@@ -2,16 +2,15 @@
 import Layout from "../../layouts/Layout.astro"
 import {CarsSection} from "../../components/CarsSection";
 import {PageHeader} from "../../components/utils/PageHeader";
+import { getBookedCars } from "../../../db";
 
-import { getCars } from "../../../db";
-
-const data = getCars();
+const data = getBookedCars();
 
 
 ---
 
 <Layout>
     <CarsSection data={data}>
-        <PageHeader  title="All Cars" paragraf="A high-performance web-based car sales platform for any dealership and automotive website"/>
+        <PageHeader  title="All Booking" paragraf="A high-performance web-based car sales platform for any dealership and automotive website"/>
     </CarsSection>
 </Layout>

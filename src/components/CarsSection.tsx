@@ -1,23 +1,21 @@
-import { CarCard } from "./utils/CarCard";
+import type { ReactNode } from "react";
+import type { Car } from "../../db";
+import { CarList } from "./utils/CarList";
 
-export function CarsSection() {
+export function CarsSection({
+    data,
+    children,
+}: {
+    data: Car[];
+    children: ReactNode;
+}) {
     return (
-        <div className="flex flex-col text-center p-6 gap-6 bg-[#F3F3F3]">
-            <h1 className="font-medium text-4xl">
-                All Cars
-            </h1>
-            <p>
-                A high-performance web-based car sales
-                platform for any dealership and automotive
-                website.
-            </p>
+        <div className="bg-[#F3F3F3]">
+            <div className="flex flex-col text-center p-6 gap-6  md:grid md:grid-cols-2 lg:grid-cols-4 max-w-[1020px] mx-auto">
+                {children}
 
-            <CarCard />
-            <CarCard />
-            <CarCard />
-            <CarCard />
-            <CarCard />
-            <CarCard />
+                <CarList data={data} />
+            </div>
         </div>
     );
 }
